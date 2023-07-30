@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">My Assignment 3</h1>
+        <img class="logo-image" src="C:\Users\Hashim\OneDrive\Desktop\Conestoga\IT SUPPORT FOUNDATIONS\Assignments\facts.jpeg" alt="Logo">
+        <nav class="nav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Contact Us</a>
+        </nav>
+    </header>
+
+    <style>
+        /* Global Styles */
+        /* Normal styles for large screens */
+
+        /* Media query for medium-sized screens */
+        @media only screen and (max-width: 768px) {
+            body {
+                font-size: 14px;
+                /* Adjust font size for smaller screens */
+            }
+
+            /* Add more styles for medium-sized screens here */
+        }
+
+        /* Media query for small-sized screens */
+        @media only screen and (max-width: 480px) {
+            body {
+                font-size: 12px;
+                /* Adjust font size for even smaller screens */
+            }
+
+            /* Add more styles for small-sized screens here */
+        }
+    </style>
+
+    <div class="clearfix">
+        <main>
+            <h2>Contact Us</h2>
+            <form id="contact-form" action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required autofocus>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label>Employment Status:</label>
+                    <input type="radio" id="student" name="employment_status" value="Student" required>
+                    <label for="student">Student</label>
+                    <input type="radio" id="employed-fulltime" name="employment_status" value="Employed Full-time" required>
+                    <label for="employed-fulltime">Employed Full-time</label>
+                    <input type="radio" id="employed-parttime" name="employment_status" value="Employed Part-time" required>
+                    <label for="employed-parttime">Employed Part-time</label>
+                    <input type="radio" id="retired" name="employment_status" value="Retired" required>
+                    <label for="retired">Retired</label>
+                    <input type="radio" id="other" name="employment_status" value="Other" required>
+                    <label for="other">Other</label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>How did you hear about our site?</legend>
+                    <input type="radio" id="social-media" name="how_heard" value="Social Media" required>
+                    <label for="social-media">Social Media</label>
+                    <input type="radio" id="friend" name="how_heard" value="Friend" required>
+                    <label for="friend">Friend</label>
+                    <input type="radio" id="search-engine" name="how_heard" value="Search Engine" required>
+                    <label for="search-engine">Search Engine</label>
+                    <input type="radio" id="other-source" name="how_heard" value="Other" required>
+                    <label for="other-source">Other</label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Tell Us what you think!</legend>
+                    <textarea id="comments" name="comments" placeholder="Your comments here"></textarea>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Submit</legend>
+                    <input type="checkbox" id="not-a-robot" name="not_a_robot" required>
+                    <label for="not-a-robot">I am not a robot</label>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
+        </main>
+    
+        <aside class="sidebar">
+            <!-- Sidebar content goes here -->
+        </aside>
+    
+        <footer>
+            <!-- Footer content goes here -->
+        </footer>
+
+</body>
+</html>
